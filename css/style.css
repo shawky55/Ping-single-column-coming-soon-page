@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Blue: #4f7df3;
+
+  /* Secondary */
+
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+html {
+  font-size: 125%;
+}
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+main{
+  padding: 1rem;
+}
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  /* padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero-img {
+  width: 550px;
+}
+.heading {
+  font-size: 1.5rem;
+}
+.heading span {
+  color: var(--Blue);
+}
+.desc-text {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.desc-text .light {
+  color: var(--Gray);
+  font-weight: 300;
+}
+.bold {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+.small-text {
+  color: var(--Very-Dark-Blue);
+}
+.form {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.error-message {
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+    color: var(--Light-Red);
+}
+.hide{
+    display: none;
+}
+.email-input {
+  border: var(--Pale-Blue) 1px solid;
+  border-radius: 79px;
+  font-size: 19px;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+  color: var(--Very-Dark-Blue);
+  outline: none;
+}
+
+.email-input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+}
+/*  */
+.submit-btn {
+  border-radius: 79px;
+  font-size: 15px;
+  padding: 0.7rem 2rem;
+  border: 0;
+  color: white;
+  outline: 0;
+  background-color: var(--Blue);
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+.submit-btn:hover {
+  background-color: #101931;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--Blue);
+}
+.social-media {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.social-media a {
+  display: flex;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+small {
+  font-size: 16px;
+  color: var(--Gray);
+}
+@media (max-width: 470px) {
+  .email-input {
+    margin: 8px 0;
+  }
+}

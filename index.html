@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./app/main.js"></script>
+    <title>Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="heading">PING<span>.</span></h1>
+        <p class="desc-text">
+          <span class="light">We are launching </span>
+          <span class="bold"> soon!</span>
+        </p>
+        <p class="small-text">Subscribe and get notified</p>
+        <form class="form">
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="email-input"
+              id="email-input"
+            />
+            <button class="submit-btn" id="email-submit">Notify Me</button>
+          </div>
+          <p class="error-message hide" id="error-message">please provide valid email address</p>
+        </form>
+        <img
+          src="./images/illustration-dashboard.png"
+          class="hero-img"
+          alt="illustration dashboard"
+        />
+      </div>
+    </main>
+    <div class="container">
+      <footer>
+        <div class="social-media">
+          <a class="logo" href="https://www.facebook.com/"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a class="logo" href="https://twitter.com/?lang=en"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a class="logo" href="https://www.instagram.com/"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </div>
+        <small>&copy; Copyright Ping. All rights reserved</small>
+      </footer>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+</html>
